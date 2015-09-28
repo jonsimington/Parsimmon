@@ -36,6 +36,12 @@ extension TaggedToken: Printable {
     public var description: String {
         return "('\(token)' \(tag))"
     }
+    public var getToken: String {
+        return "\(token)"
+    }
+    public var getTag: String {
+        return "\(tag)"
+    }
 }
 
 public func ==(lhs: TaggedToken, rhs: TaggedToken) -> Bool {
